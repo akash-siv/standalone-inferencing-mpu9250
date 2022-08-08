@@ -159,8 +159,6 @@ extern "C" int app_main()
         printf("]\n");
 
         gpio_set_level(LED_PIN, 0);
-        // ei_sleep(1000);
-        // float features[] = {};
         
     }
 }
