@@ -15,7 +15,7 @@ void main()
     {
         // run the inference
         // after running the infference zero out the features
-        features[375] = {};
+        features[] = {};
 
     }
 
