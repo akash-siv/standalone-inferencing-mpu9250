@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void main()
+{
+    float features[375];
+    for (int j = 0; j<375; j+=3)
+    {
+        features[j+0] = 1;
+        features[j+1] = 2;
+        features[j+2] = 3;
+        vTaskDelay(10/ portTICK_PERIOD_MS);
+    }
+
+    if (sizeof(features) == 375)
+    {
+        // run the inference
+        // after running the infference zero out the features
+        features[375] = {};
+
+    }
+
+}
+
